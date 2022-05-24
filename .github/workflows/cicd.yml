@@ -1,0 +1,15 @@
+on:
+  push:
+name: action
+jobs:
+  hello-world:
+    name: Un job para saludar
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step Hola Mundo
+        id: hello
+        uses: juancamiloed1227/compunube-action-docker
+        with:
+          who-to-greet: "Juan Camilo"
+      - name: Usar el output
+        run: echo "La fecha fue ${{ steps.hello.outputs.time }}"
