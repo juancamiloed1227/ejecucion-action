@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Step Hola Mundo
         id: hello
-        uses: juancamiloed1227/compunube-action-docker
+        uses: juancamiloed1227/compunube-action-docker@v1
         with:
           who-to-greet: "Juan Camilo"
       - name: Usar el output
