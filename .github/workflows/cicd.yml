@@ -10,6 +10,6 @@ jobs:
         id: hello
         uses: juancamiloed1227/compunube-action-docker@v1
         with:
-          who-to-greet: "Juan Camilo"
+          who-to-greet: "Geyner Rivera"
       - name: Usar el output
         run: echo "La fecha fue ${{ steps.hello.outputs.time }}"
